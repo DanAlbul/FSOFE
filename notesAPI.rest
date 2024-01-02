@@ -1,0 +1,22 @@
+@hostname = http://localhost:3005
+
+### Home page
+GET {{hostname}}
+
+### get all notes
+GET {{hostname}}/api/notes
+
+### get by id
+GET {{hostname}}/api/notes/432
+
+### delete by id
+DELETE {{hostname}}/api/notes/1
+
+### create new note
+POST {{hostname}}/api/notes
+Content-Type: application/json
+
+{
+	"content": "asdasdsa",
+	"important": false
+}
